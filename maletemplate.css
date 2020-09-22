@@ -1,0 +1,171 @@
+html,body{
+    height:100%;
+}
+.container{
+    min-height: 100%;
+    overflow: hidden;
+    margin:auto;
+}
+aside,#content{
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/********* header **********/
+header{
+    background-color: #29a3a3;
+    position: static;
+    max-height: 100%
+}
+#left{
+    background: #33cccc;
+    height: 146px;
+}
+#right{
+    padding:0px;
+}
+#right >h3{
+    background-color: #2eb8b8;
+    padding:20px; 
+
+}
+#right >h1,#right >h3{
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+   width: 100%;
+    text-align: center;
+}
+.img-circle{
+    margin-left:110px;
+}
+
+/************ aside **************/
+aside{
+    background-color: #E8E8EE;
+}
+.title-left{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+#profil,#contact,#skills{
+    padding-top:20px;
+}
+
+/**** contact ***/
+#contact > .row > .well {
+    background:#A9A9A9 !important; 
+}
+#contact>.row  >.well>.info{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+
+
+/********* content *********/
+#content{
+    background-color: #f5f5f0;
+}
+#experience >.row> .well,#education > .row>.well,#langues >.row>.well{
+    background:#d3d3d3 !important;
+    margin-left:15px
+}
+/* stars*/
+#experience >.row> .well> .round-star,#education > .row>.well>.round-star,#langues >.row>.well>.round-star{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #222;    
+    color: #FFF;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 1.5em;
+    background-color: #2eb8b8;
+    margin-left:20px;
+}
+.title-right{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #29a3a3;
+    font-weight: bold;
+    padding-left: 40px;
+}
+.nom,.date{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #2eb8b8;
+    font-weight: bold;
+}
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:  #2e2e1f; 
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/************ progress bar **********/
+.progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color:#29a3a3;
+    margin: 0 0 20px;
+}
+.progress{
+    height: 20px;
+    background: #333;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+.progress .progress-bar{
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+
+.progress .progress-bar:after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    background: #fff;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    right: -5px;
+    z-index: 1;
+    transform: rotate(35deg);
+}
+@media print {
+    .col-lg-1 {width:8%!important;  float:left!important;}
+    .col-lg-2 {width:16%!important; float:left!important;}
+    .col-lg-3 {width:25%!important; float:left!important;}
+    .col-lg-4 {width:33%!important; float:left!important;}
+    .col-lg-5 {width:42%!important; float:left!important;}
+    .col-lg-6 {width:50%!important; float:left!important;}
+    .col-lg-7 {width:58%!important; float:left!important;}
+    .col-lg-8 {width:66%!important; float:left!important;}
+    .col-lg-9 {width:75%!important; float:left!important;}
+    .col-lg-10{width:83%!important; float:left!important;}
+    .col-lg-11{width:92%!important; float:left!important;}
+    .col-lg-12{width:100%!important; float:left!important;}
+    .img-circle{
+        margin-left:60px;
+    }
+    
+}
